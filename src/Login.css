@@ -67,10 +67,12 @@
 }
 
 .login-wrapper .login-input-field {
+    position: relative;
+    left: -30px;
     border-radius: 25px; /* Rounded oblong shape for input fields */
     border: 1px solid #ccc; /* Thin border for input fields */
     padding: 10px; /* Padding for input fields */
-    width: 100%; /* Full width */
+    width: 125%; /* Full width */
 }
 
 .login-wrapper .login-input-label {
@@ -112,11 +114,45 @@
     opacity: 1; /* Ensure label is visible */
 }
 
-.login-wrapper .logo {
+.login-wrapper .login-logo {
     width: 50px; /* Shrink the logo size */
     margin-bottom: 150px; /* Reduce space out the logo from the welcome message */
+    filter: brightness(0) saturate(100%) invert(30%) sepia(100%) hue-rotate(10deg) brightness(90%);
 }
 
-.login-wrapper .error {
+.login-wrapper .login-error {
     color: red;
+}
+
+.login-wrapper .forgot-password-link {
+    position: relative;
+    top: -12.5px;
+    right: -122.5px;
+    text-align: right;
+    font-size: 12px;
+    color: #6f4e37;
+    font-family: AlteHaasGroteskRegular;
+    opacity: 0.5;
+}
+
+.login-wrapper .login-signup-link {
+    position: relative  ;
+    top: 10px;
+    text-align: right;
+    font-size: 12px;
+    color: #6f4e37;
+    font-family: AlteHaasGroteskRegular;
+    opacity: 0.5;
+}
+
+.login-wrapper .login-button {
+    position: relative;
+    left: -30px;
+    border-radius: 25px; /* Rounded oblong shape for button */
+    background-color: blue; /* Blue background for button */
+    color: white; /* White text for button */
+    padding: 10px 20px; /* Padding for button */
+    border: none; /* Remove border */
+    width: 125%;
+
 }

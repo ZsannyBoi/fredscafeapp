@@ -53,12 +53,12 @@ const LoginComponent = ({ onLogin }) => {
                             />
                             <label className="login-input-label">Password</label>
                         </div>
-                        <button type="submit">Login</button>
-                        <a href="/forgot-password" className="forgot-password-link">Forgot Password?</a>
+                        <a href="/forgot-password" className="forgot-password-link">Forgotten Password?</a>
+                        <button type="submit" className="login-button">Login</button>
                     </form>
-                    <p>
+                    <p className="login-signup-link">
                         Don't have an account? 
-                        <a href="/signup" className="signup-link"> Sign up now</a>
+                        <a href="/signup" style={{ textDecoration: 'underline' }}> Sign up now</a>
                     </p>
                 </div>
             </div>
