@@ -1,0 +1,122 @@
+.login-wrapper .login-container {
+    position: relative; /* Change to relative positioning for better responsiveness */
+    width: 100%; /* Full width */
+    height: 100vh; 
+    padding: 40px; /* Increased padding for uniform margins around the edges */ 
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; /* Align items to the top */
+}
+
+.login-wrapper .login-banner-container {
+    position: relative; /* Change to relative positioning */  
+    left: -30px;
+    width: 66.5%; /* Increased width to occupy more space on the left */
+    height: 100%; /* Set height to match the login form */
+    overflow: hidden;
+    border-radius: 20px; /* Set rounded rectangular border for the banner */
+}
+
+.login-wrapper .login-banner-image {
+    position: absolute;
+    top: 50%;
+    left: 0; /* Align to the left */
+    width: 100%; /* Adjust width to occupy the full banner */
+    height: auto;
+    transform: translateY(-50%); /* Center vertically */
+    z-index: -1;
+}
+
+.login-wrapper .login-text-overlay {
+    position: absolute; /* Change to absolute positioning */
+    top: 10%; /* Position at the top */
+    left: 5%; /* Align to the left */
+    z-index: 1;
+    color: white;
+    text-align: left; /* Align text to the left */
+    font-size: 2.5vw; /* Responsive font size */
+    font-family: AlteHaasGroteskBold;
+}
+
+.login-wrapper .login-welcome-message {
+    position: relative;
+    top: -60px;
+    font-size: 30px; /* Set font size for the welcome message */
+    color: #6f4e37; /* Set color for the welcome message */
+    font-family: AlteHaasGroteskBold;
+}
+
+.login-wrapper .login-form-container {
+    position: relative; /* Change to relative positioning */
+    left: 30px;
+    width: 25%; /* Decreased width to occupy the remaining space */
+    height: 100%; /* Set height to match the banner */
+    padding: 50px; /* Add padding to the form container */
+    border: 1px solid #ccc; /* Thin border for the form */
+    border-radius: 20px; /* Set rounded rectangular border for the form */
+    background-color: white; /* Background color for better visibility */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+}
+
+.login-wrapper .login-input-container {
+    position: relative; /* Position relative for absolute positioning of label */
+    margin-bottom: 20px; /* Space between input fields */
+}
+
+.login-wrapper .login-input-field {
+    border-radius: 25px; /* Rounded oblong shape for input fields */
+    border: 1px solid #ccc; /* Thin border for input fields */
+    padding: 10px; /* Padding for input fields */
+    width: 100%; /* Full width */
+}
+
+.login-wrapper .login-input-label {
+    position: absolute; /* Position the label absolutely */
+    left: 15px; /* Position from the left */
+    top: 15px; /* Position from the top */
+    transition: 0.2s ease all; /* Smooth transition for floating effect */
+    color: #aaa; /* Color of the label */
+    pointer-events: none; /* Prevent interaction with the label */
+    opacity: 1; /* Ensure label is visible */
+    font-size: 16px; /* Original font size */
+    font-family: AlteHaasGroteskRegular;
+}
+
+.login-wrapper .login-input-field:focus + .login-input-label,
+.login-wrapper .login-input-field:not(:placeholder-shown) + .login-input-label {
+    top: -10px; /* Move label up */
+    left: 15px; /* Keep label aligned */
+    font-size: 12px; /* Smaller font size */
+    color: #6f4e37; /* Change color when active */
+    opacity: 1; /* Ensure label is visible */
+}
+
+.login-wrapper .login-input-field:blur + .login-input-label {
+    /* Only move the label back down if the input is empty */
+    top: 15px; /* Move label back down inside the input field */
+    left: 15px; /* Keep label aligned */
+    font-size: 16px; /* Original font size */
+    color: #aaa; /* Original color */
+    opacity: 1; /* Ensure label is visible */
+}
+
+.login-wrapper .login-input-field:valid + .login-input-label {
+    /* If the input is valid (filled), keep the label up */
+    top: -10px; /* Move label up */
+    left: 15px; /* Keep label aligned */
+    font-size: 12px; /* Smaller font size */
+    color: #6f4e37; /* Change color when active */
+    opacity: 1; /* Ensure label is visible */
+}
+
+.login-wrapper .logo {
+    width: 50px; /* Shrink the logo size */
+    margin-bottom: 150px; /* Reduce space out the logo from the welcome message */
+}
+
+.login-wrapper .error {
+    color: red;
+}
