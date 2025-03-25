@@ -40,6 +40,7 @@ const LoginComponent = ({ onLogin }) => {
                                 onChange={(e) => setLoginEmail(e.target.value)}
                                 required
                                 className="login-input-field"
+                                placeholder='Email'
                             />
                             <label className="login-input-label">Email</label>
                         </div>
@@ -50,6 +51,7 @@ const LoginComponent = ({ onLogin }) => {
                                 onChange={(e) => setLoginPassword(e.target.value)}
                                 required
                                 className="login-input-field"
+                                placeholder='Password'
                             />
                             <label className="login-input-label">Password</label>
                         </div>

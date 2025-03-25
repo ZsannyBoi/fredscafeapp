@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import './App.css';
-import Login from './Login'; // Import the Login component
+import Login from './Login';
 
 const NavButton = ({ logo, text, isSelected, onClick }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -54,7 +54,7 @@ const App = () => {
     return <Login onLogin={handleLogin} />; // Render the Login component if not logged in
   }
 
-  // Main application content
+
   return (
     <div className="app-container">
       <div className="sidebar">
